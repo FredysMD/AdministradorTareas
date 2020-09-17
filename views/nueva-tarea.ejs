@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Nueva tarea</title>
+</head>
+<body>
+
+<div class="container">
+    <h3>Nueva tarea</h3>
+     <form action="POST">
+       
+        <div class="form-row">
+            <div class="form-group col-sm-9">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" name="titulo" placeholder="Ingrese el título" required>
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="estado">Estado</label>
+                <select class="form-control" id="estado">
+                    <option selected>Por hacer</option>
+                    <option>Haciendo</option>
+                    <option>Hecha</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="Fecha de entrega">Fecha de entrega</label>
+                <input type="date" class="form-control" name="fecha-entrega" required>
+             </div>
+             <div class="form-group col-sm-6">
+                <label for="Hora de entrega">Hora de entrega</label>
+                <input type="time" class="form-control" name="hora-entrega" required>
+             </div>
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea class="form-control" name="descripcion" id="descripcion"  rows="5" required></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Crear tarea">
+     </form>
+ </div>
+
+    
+</body>
+</html>

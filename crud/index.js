@@ -1,5 +1,5 @@
 const express = require('express');
-const conexion = require('./database.js');
+const conexion = require('../database.js');
 
 var app = express();
 
