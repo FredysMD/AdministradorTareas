@@ -5,7 +5,7 @@ const path = require('path');
 
 
 app.use(bodyparser.json());
-app.use(require('./crud/'));
+app.use(require('./api/tarea'));
 app.set('views',path.join(__dirname,'views'));
 
 
@@ -13,7 +13,7 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
 
 // rutas
-app.use('/', require('./routes/'));
+app.use('/', require('./routes/rutas'));
 
 
 app.listen(3000,()=>{    
