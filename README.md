@@ -11,3 +11,6 @@ CRUD de gestión de tareas teniendo en cuenta las buenas practicas de programaci
 
 1. npm install
 2. nodemon src/index
+
+# Probar API
+1. Postman (ejemplo)
